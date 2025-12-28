@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家庭酷樂網狀態頁面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .status {
+            margin: 20px 0;
+        }
+        .service {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .service:last-child {
+            border-bottom: none;
+        }
+        .status-indicator {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .online {
+            background-color: #4CAF50;
+        }
+        .offline {
+            background-color: #f44336;
+        }
+        .maintenance {
+            background-color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>家庭酷樂網狀態頁面</h1>
+        <p>以下是我們服務的當前狀態：</p>
+        <div class="status">
+            <div class="service">
+                <span>主網站</span>
+                <span class="status-indicator online"></span>
+            </div>
+            <div class="service">
+                <span>API 服務</span>
+                <span class="status-indicator online"></span>
+            </div>
+            <div class="service">
+                <span>數據庫</span>
+                <span class="status-indicator online"></span>
+            </div>
+            <div class="service">
+                <span>郵件服務</span>
+                <span class="status-indicator maintenance"></span>
+            </div>
+        </div>
+        <p>最後更新：2025年12月28日</p>
+    </div>
+</body>
+</html></content>
+<parameter name="filePath">/workspaces/status-page/index.html
